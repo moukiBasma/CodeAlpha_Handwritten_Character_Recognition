@@ -40,5 +40,11 @@ A deep learning project implementing **Convolutional Neural Networks (CNN)** to 
 2. Open the `.ipynb` files in Google Colab or Jupyter Notebook.
 3. Run all cells to retrain models or load saved weights from the `models/` folder.
 
+## 🔮 Future Enhancements
+- **Sequence Modeling:** Extend the current CNN backbone with **LSTM/GRU** layers to implement a **CRNN** architecture.
+- **CTC Loss:** Implement Connectionist Temporal Classification (CTC) loss to enable variable-length word recognition without character segmentation.
+- **Dataset:** Expand to the **IAM Handwriting Database** for real-world sentence recognition.
+- **Deployment:** Build a Streamlit web app for real-time handwriting-to-text conversion.
+
 ## 📄 License
 MIT License
