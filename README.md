@@ -1,40 +1,40 @@
-# 🖐️ Handwritten Recognition (MNIST, EMNIST & OCR)
+# Handwritten Recognition (MNIST, EMNIST & OCR)
 
-A deep learning project recognizing handwritten digits, letters, and full words using **CNNs** and **Pre-trained CRNN**.
+A deep learning project recognizing handwritten digits, letters, and full words using custom Convolutional Neural Networks (CNNs) and a pre-trained CRNN engine.
 
-## 📊 Results at a Glance
+## Results Overview
 
 | Task | Dataset/Method | Accuracy/Confidence |
-| :--- | :--- | :---: |
+| :--- | :--- | :--- |
 | **Digits (0-9)** | MNIST (Custom CNN) | **99.03%** |
 | **Letters (A-Z)** | EMNIST (Custom CNN) | **93.81%** |
-| **Words** | EasyOCR (Pre-trained CRNN) | **~92% Avg** |
+| **Words** | EasyOCR (Pre-trained CRNN) | **~92% Average** |
 
-> 💡 **Key Win:** Fixed EMNIST rotation issues (`rot90` + `flip`) to boost letter accuracy from <60% to **93.81%**.
+**Key Achievement:** Identified and fixed a critical preprocessing issue in the EMNIST dataset where images were rotated 90 degrees. By implementing `rot90` and horizontal flipping, letter recognition accuracy improved from below 60% to **93.81%**.
 
-## 🛠️ Tech Stack
-*   **Core:** TensorFlow 2.x, Keras
-*   **OCR Engine:** EasyOCR (CRNN + CTC)
+## Tech Stack
+*   **Core Framework:** TensorFlow 2.x, Keras
+*   **OCR Engine:** EasyOCR (CRNN + CTC architecture)
 *   **Tools:** OpenCV, Matplotlib, Google Colab (T4 GPU)
 
-## 🚀 Quick Start
-1.  **Open** notebooks in Google Colab.
-2.  **Mount Drive:** Run the setup cell to save results automatically.
-3.  **Run All:** Trains models (digits/letters) or runs OCR on custom images.
+## Quick Start
+1.  Open the provided notebooks in Google Colab.
+2.  Run the setup cell to mount Google Drive for automatic result saving.
+3.  Execute all cells to train the digit/letter models or run word recognition on custom images.
 
-## 📁 Project Structure
+## Project Structure
 ```text
 CodeAlpha_HandwrittenRecognition/
-├── notebooks/          # MNIST, EMNIST, and OCR code
-├── models/             # Saved .h5 weights (Digits & Letters)
-├── images/             # Test images (test1.png - test9.png)
-└── results/            # JSON reports, summaries, and plots
+├── notebooks/          # Code for MNIST, EMNIST, and OCR tasks
+├── models/             # Saved .h5 weights for Digits and Letters
+├── images/             # Test images (test1.png through test9.png)
+└── results/            # JSON reports, summaries, and visualization plots
 ```
 
-## 🔮 Future Work
-*   Train custom CRNN for handwriting (IAM Dataset).
-*   Deploy as a Streamlit web app.
-*   Add multi-language support (Arabic, French, etc.).
+## Future Work
+*   Train a custom CRNN model from scratch using the IAM Handwriting Database.
+*   Deploy the solution as a real-time web application using Streamlit.
+*   Expand language support beyond English to include Arabic, French, and others.
 
 ---
-*MIT License | CodeAlpha Internship Project*
+MIT License | CodeAlpha Internship Project
